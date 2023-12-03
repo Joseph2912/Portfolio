@@ -484,6 +484,10 @@ img {
       grid-column-start: 1;
       grid-column-end: 1;
     }
+    .Sobre-mi{
+
+      padding: 30px;
+    }
     .nombre h1 {
       font-size: 32px; /* Por ejemplo, ajusta el tamaño de fuente */
     }
