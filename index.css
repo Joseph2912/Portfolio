@@ -17,7 +17,11 @@ body {
   grid-template-rows: auto auto auto;
   grid-gap: 8px;
 }
+.contenedor section:nth-child(10){
 
+  grid-column-start: 4;
+  grid-column-end: 1;
+}
 .Sobre-mi {
   display: flex;
   flex-direction: column;
@@ -198,6 +202,7 @@ img {
 .linkedin {
   display: flex;
   width: auto;
+  height: auto;
   justify-content: center;
   align-items: center;
   background: linear-gradient(
@@ -208,27 +213,14 @@ img {
   border-radius: 24px;
   animation: fadeInDown 1s 0.7s ease-out both;
 }
-.linkedin i{
-  
-  position: relative;
-  left: 115px;
-  top: -105px;
-  opacity: 0;
-  
-}
-.linkedin:hover i{
 
-  opacity: 80%;
-
-}
 .linkedin img {
   display: flex;
-  position: relative;
   width: 100px;
   height: 100px;
   transition-duration: 1s;
   transition-property: scale;
-  left: -4px;
+
 }
 .linkedin:hover img{
   
@@ -322,11 +314,10 @@ img {
 }
 .github-link {
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
   width: auto;
-  
+  height: auto;
   background: linear-gradient(
     317deg,
     rgba(108, 13, 153, 1) 0%,
@@ -336,19 +327,7 @@ img {
   animation: fadeInDown 1s 1s ease-out both;
   
 }
-.github-link i{
-  
-  position: relative;
-  left: 115px;
-  top: -105px;
-  opacity: 0;
-  
-}
-.github-link:hover i{
 
-  opacity: 80%;
-
-}
 .github-link img {
   display: flex;
   position: relative;
@@ -394,7 +373,7 @@ img {
     .contenedor {
       display: grid;
       grid-template-columns: auto auto; 
-      grid-template-rows:  auto 400px;
+      grid-template-rows:  auto auto;
       grid-gap: 8px;
     }
 
@@ -407,6 +386,16 @@ img {
 
       grid-row-start: 2;
       grid-row-end: 2;
+    }
+    .contenedor section:nth-child(9){
+
+      grid-column-start: 3;
+      grid-column-end: 1;
+    }
+    .contenedor section:nth-child(10){
+
+      grid-column-start: 3;
+      grid-column-end: 1;
     }
     .nombre h1 {
       font-size: 32px; /* Por ejemplo, ajusta el tamaño de fuente */
@@ -476,6 +465,10 @@ img {
      gap: 20px;
   
     }
+    .github-link {
+      height: 230px;
+    }
+
   }
   @media only screen and (max-width: 767px) {
 
@@ -483,14 +476,51 @@ img {
     .contenedor {
       display: grid;
       grid-template-columns: auto; 
-      grid-template-rows: 200px;
+      grid-template-rows: 250px;
       grid-gap: 8px;
+    }
+    .contenedor section:nth-child(10){
+
+      grid-column-start: 1;
+      grid-column-end: 1;
     }
     .nombre h1 {
       font-size: 32px; /* Por ejemplo, ajusta el tamaño de fuente */
     }
     .parrafo {
       font-size: 12px; /* Por ejemplo, ajusta el tamaño de fuente */
+    }
+    .linkedin {
+      height: 200px;
+    }
+    .años-experiencia{
+
+      justify-content: space-evenly;
+      flex-direction: row;
+      height: 200px;
+    }
+    .año1 h2 {
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+    }
+    .año1 h4 {
+   
+      font-size: 40px;
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      font-weight: lighter;
+    }
+    .Información{
+
+      height: 230px;
+    }
+    .github-link {
+      height: 230px;
+    }
+    .ingles h1{
+
+      scale: 1;
+    
     }
   }
     
